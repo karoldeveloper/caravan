@@ -23,3 +23,10 @@ body {
     position: relative;
   }
 }
+
+.plan-list li + li {
+  border-top: 1px solid rgba(0, 0, 0, .2);
+}
+.plan-list li {
+  padding: 1rem;
+}

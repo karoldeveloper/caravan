@@ -16,6 +16,38 @@
 
 <body>
 
+  <!-- Start Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre na sua conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">E-mail</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary text-center">Entrar na conta</button>
+              <small class="form-text text-muted"><a href="#">Esqueceu a senha?</a></small>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal -->
+
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
     <!-- Start navigation area -->
     <a href="index.html" class="navbar-brand">
@@ -30,12 +62,12 @@
         <!-- Start Locais dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false" href="#">Locais
+            aria-haspopup="true" aria-expanded="false" href="local.html">Locais
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a href="#" class="dropdown-item">California</a>
-            <a href="#" class="dropdown-item">Paris</a>
-            <a href="#" class="dropdown-item">Dublin</a>
+            <a href="california.html" class="dropdown-item">California</a>
+            <a href="paris.html" class="dropdown-item">Paris</a>
+            <a href="dublin.html" class="dropdown-item">Dublin</a>
           </div>
         </li>
         <!-- End Locais dropdown -->
@@ -47,7 +79,7 @@
           <a class="nav-link" href="contato.html">Contato</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Login</a>
         </li>
         <li class="nav-item">
           <a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a>
@@ -98,7 +130,7 @@
         </div>
         <!-- End carousel -->
       </div>
-      <div class="col-lg-5 p-4">
+      <div class="col-lg-5 p-4 align-self-center">
         <h1 class="display-4">Realize a viagem do seu sonho</h1>
         <p class="lead">O melhor local para viajar é com a Caravan, mais de 5.000 excursões concluídas.</p>
         <form action="">
@@ -120,7 +152,7 @@
         <h2 class="display-4 text-primary">Aproveite as Vantagens</h2>
       </div>
       <div class="row">
-        <div class="col-xl-4 col-md-6">
+        <div class="col-lg-4 col-md-6">
           <div style="height: 100px;" class="d-flex justify-content-center">
             <img src="img/icones/passaporte.svg" alt="Passaporte">
           </div>
@@ -128,7 +160,7 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio dolores assumenda sit oditmolestiae sint
             quibusdam</p>
         </div>
-        <div class="col-xl-4 col-md-6">
+        <div class="col-lg-4 col-md-6">
           <div style="height: 100px;" class="d-flex justify-content-center">
             <img src="img/icones/passagens.svg" alt="Passagens">
           </div>
@@ -136,7 +168,7 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio dolores assumenda sit oditmolestiae sint
             quibusdam</p>
         </div>
-        <div class="col-xl-4 col-md-6">
+        <div class="col-lg-4 col-md-6">
           <div style="height: 100px;" class="d-flex justify-content-center">
             <img src="img/icones/translado.svg" alt="Translado">
           </div>
@@ -146,7 +178,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-4 col-md-6">
+        <div class="col-lg-4 col-md-6">
           <div style="height: 100px;" class="d-flex justify-content-center">
             <img src="img/icones/praias.svg" alt="Praias">
           </div>
@@ -154,7 +186,7 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio dolores assumenda sit oditmolestiae sint
             quibusdam</p>
         </div>
-        <div class="col-xl-4 col-md-6">
+        <div class="col-lg-4 col-md-6">
           <div style="height: 100px;" class="d-flex justify-content-center">
             <img src="img/icones/bagagens.svg" alt="Bagagens">
           </div>
@@ -162,7 +194,7 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio dolores assumenda sit oditmolestiae sint
             quibusdam</p>
         </div>
-        <div class="col-xl-4 col-md-6">
+        <div class="col-lg-4 col-md-6">
           <div style="height: 100px;" class="d-flex justify-content-center">
             <img src="img/icones/turismo.svg" alt="Turismo">
           </div>
@@ -275,12 +307,60 @@
         </div>
       </div>
     </div>
-    <div class="text-center my-4">
-      <p class="small m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
-      <a href="contato.html" class="btn btn-primary">Entre em contato</a>
-    </div>
-
   </section>
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="planos.html">Planos</a>
+            </li>
+            <li>
+              <a href="contato.html">Contato</a>
+            </li>
+            <li>
+              <a href="inscricao.html">Inscreva-se</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6" >LOCAIS</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="california.html">California</a>
+            </li>
+            <li>
+              <a href="paris.html">Paris</a>
+            </li>
+            <li>
+              <a href="dublin.html">Dublin</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-6">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>caravan@caravan.com.br</li>
+            <li> 21 99999-9999</li>
+            <li> De Seg. à Sex das 8h às 18h </li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-6">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled text-secondary">
+            <li><a href="" style="max-width: 140px;" class="btn btn-outline-secondary btn-sm btn-block mb-2">Facebook</a></li>
+            <li><a href="" style="max-width: 140px;" class="btn btn-outline-secondary btn-sm btn-block mb-2">Twitter</a></li>
+            <li><a href="" style="max-width: 140px;" class="btn btn-outline-secondary btn-sm btn-block mb-2">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Caravan © 2020. Alguns direitos reservados.</p>
+    </div>
+  </footer>
 
 
   <script src="js/jquery-3.3.1.slim.min.js"></script>
